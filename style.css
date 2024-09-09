@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#header_text{
+    padding: 30px;
+    font-size: 45px;
+    background-color: #343a40;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-style: bold;
+    color: white;
+}
+
+#main_text{
+    text-align: start;
+    padding: 20px;
+    font-size: 15px;
+    background-color: #343a40;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    color: white;
+}
+
+#imc_funcs {
+    padding-top: 30px;
+    padding-right:  80px;
+}
+
+#imc_buttons .btn {
+    margin-top: 10px;
+}
+
+#main_table {
+    padding-top: 30px;
+    padding-right:  80px;
+    padding-left:  80px;
+}
+
+.buttons_op{
+    margin: 2px;
+
+}
+  
+@-webkit-keyframes shaker {
+    0% { -webkit-transform: translate(2px, 0); }
+    50% { -webkit-transform: translate(-2px, 0); }
+    100% { -webkit-transform: translate(2px, 0); }
+}
+  
+.shake {
+    -webkit-animation-name: shaker;
+    -webkit-animation-duration: 0.1s;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-timing-function: linear;
+}
+  
+
+

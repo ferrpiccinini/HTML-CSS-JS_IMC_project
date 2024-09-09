@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <aside class="text-center mb-3">
+            <div id="header_text">
+                <p>IMC IFSP</p>
+            </div>
+        </aside>
+    </header>
+
+    <main class="row">
+        <section id="main_table" class="col-10 text-center">
+            <h2 id="main_text" class="text-start">Tabela de usuários: </h2>
+            <table class="table table-striped">   
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Weight</th>
+                        <th scope="col">Height</th>
+                        <th scope="col">IMC</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <nav id="imc_funcs" class="col-2 bg-black">
+            <div data-mdb-input-init class="form-outline">
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <input type="text" id="typetext00" class="form-control w-100" placeholder="Ex: 'Fer'" maxlength="12">
+                        <label class="form-label" for="typetext00">Enter the name</label>
+                    </div>
+                    
+                    
+                    <div class="col-6">
+                        <input type="number" id="typeNumber00" class="form-control" placeholder="CM" min="0" max="300">
+                        <label class="form-label" for="typeNumber00">Height:</label>
+                    </div>
+
+                    <div class="col-6">
+                        <input type="number" id="typeNumber01" class="form-control" placeholder="KG" min="0">
+                        <label class="form-label" for="typeNumber01">Weight:</label>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="imc_buttons" class="mb-3">
+                <div>
+                    <button type="button" class="btn btn-primary w-100">Add</button>
+                </div>
+
+                <div>
+                    <button type="button" class="btn btn-outline-danger w-100">Remove the higgest one</button>
+                    <button type="button" class="btn btn-outline-danger w-100">Remove the lowest one</button>
+                </div>
+            </div>
+
+
+        </nav>
+
+        
+    </main>
+    
+    <script src="main_js.js"></script>
+</body>
+</html>
